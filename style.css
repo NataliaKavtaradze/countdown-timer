@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@600;800&family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#1D1E28 100%, #261C2D 100%, #261A2D 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  width: 100%;
+}
+
+h2 {
+  position: absolute;
+  width: 327px;
+  height: 48px;
+  top: 142px;
+  font-family: REd Hat Text;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.81px;
+  color: #FFFFFF;
+  letter-spacing: 6.14px;
+  text-align: center;
+}
+
+.boxes {
+  position: absolute;
+  width: 327px;
+  height: 92px;
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+  top: 244px
+}
+
+.main-box {
+  width: 70px;
+  height: 71px;
+  background-color: #191A23;
+  border-radius: 8px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-box {
+  background-color: #343650;
+  height: 66.27px;
+  width: 70px;
+  opacity: 15.06%;
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  position: absolute;
+
+
+}
+
+hr {
+  position: absolute;
+  width: 70px;
+  height: 0.47px;
+  top: 32.76px;
+  color: #000000;
+  opacity: 25.3%;
+  mix-blend-mode: normal;
+}
+
+.sircle-left {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.sircle-right {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+
+
+.number {
+  position: absolute;
+  font-family: Red Hat Text;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -1.08px;
+  text-align: center;
+  color: #FB5E84;
+  align-self: center;
+}
+
+.title-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 327px;
+  height: 12px;
+  column-gap: 16px;
+  top: 324px;
+}
+
+span {
+  width: 70px;
+  top: 80px;
+  font-family: Red Hat Text;
+  font-size: 7px;
+  line-height: 9.26px;
+  letter-spacing: 2.96px;
+  text-align: center;
+  color: #8385A9;
+}
+
+footer {
+  width: 375px;
+  height: 168px;
+  position: absolute;
+  top: 525px;
+  transform: translate(-1070px);
+}
