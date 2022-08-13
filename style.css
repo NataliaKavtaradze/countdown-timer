@@ -102,7 +102,10 @@ hr {
 
 
 
-.number {
+#day-number,
+#hour-number,
+#minute-number,
+#second-number {
   position: absolute;
   font-family: Red Hat Text;
   font-size: 36px;
