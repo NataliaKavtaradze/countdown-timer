@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+.conteiner {
+  border: 2px solid skyblue;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(#1D1E28 100%, #261C2D 100%, #261A2D 100%);
   display: flex;
@@ -18,6 +19,7 @@ body {
 
 .stars {
   width: 100%;
+  height: 100vh;
 }
 
 h2 {
@@ -60,7 +62,7 @@ h2 {
   background-color: #343650;
   height: 66.27px;
   width: 70px;
-  opacity: 15.06%;
+  /* opacity: 15.06%; */
   mix-blend-mode: normal;
   border-radius: 4px;
   position: absolute;
@@ -73,7 +75,7 @@ hr {
   width: 70px;
   height: 0.47px;
   top: 32.76px;
-  color: #000000;
+  background-color: #000000;
   opacity: 25.3%;
   mix-blend-mode: normal;
 }
@@ -87,6 +89,7 @@ hr {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  z-index: 2;
 }
 
 .sircle-right {
@@ -98,6 +101,7 @@ hr {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  z-index: 2;
 }
 
 
@@ -115,6 +119,7 @@ hr {
   text-align: center;
   color: #FB5E84;
   align-self: center;
+  z-index: 1;
 }
 
 .title-wrapper {
@@ -138,10 +143,98 @@ span {
   color: #8385A9;
 }
 
-footer {
-  width: 375px;
-  height: 168px;
+.hills {
   position: absolute;
-  top: 525px;
-  transform: translate(-1070px);
+  height: 168px;
+  width: 909px;
+  top: 499px;
+  left: -469px;
+}
+
+.social-icons {
+  position: absolute;
+  display: flex;
+  width: 136px;
+  column-gap: 32px;
+  top: 595px;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  h2 {
+    width: 439px;
+    height: 29px;
+    top: 132px;
+    font-size: 22px;
+    line-height: 29.11px;
+    letter-spacing: 7.5px;
+  }
+
+  .boxes {
+    width: 688px;
+    height: 184px;
+    column-gap: 32px;
+    top: 265px
+  }
+
+  .main-box {
+    width: 148px;
+    height: 150px;
+  }
+
+  .top-box {
+    height: 140px;
+    width: 148px;
+    border-radius: 8px;
+  }
+
+  hr {
+    width: 148px;
+    height: 1px;
+    top: 74px;
+  }
+
+  #day-number,
+  #hour-number,
+  #minute-number,
+  #second-number {
+    width: 96px;
+    height: 71px;
+    font-size: 80px;
+    letter-spacing: -2.4px;
+  }
+
+  .title-wrapper {
+    width: 688px;
+    height: 18px;
+    column-gap: 32px;
+    top: 435px;
+  }
+
+  span {
+    width: 148px;
+    top: 18px;
+    font-size: 14px;
+    line-height: 18.52px;
+    letter-spacing: 5.92px;
+  }
+
+  .hills {
+    width: 1440px;
+    top: 603px;
+    height: 266px;
+    left: 0;
+  }
+
+  .social-icons {
+    top: 701px;
+  }
+
+  .social-icons img:hover {
+    cursor: pointer;
+    background-color: #FB5E84;
+  }
+
+
 }
