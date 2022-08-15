@@ -6,11 +6,21 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
 .conteiner {
   border: 2px solid skyblue;
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(#1D1E28 100%, #261C2D 100%, #261A2D 100%);
   display: flex;
   flex-direction: column;
@@ -221,7 +231,7 @@ span {
   }
 
   .hills {
-    width: 1440px;
+    width: 100%;
     top: 603px;
     height: 266px;
     left: 0;
